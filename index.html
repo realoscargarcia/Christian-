@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cristian Zúñiga Toledo · Fotógrafo en Las Terrenas, Samaná</title>
+<meta name="description" content="Cristian Zúñiga Toledo, fotógrafo y reportero gráfico en Las Terrenas, Samaná. Retratos, reportaje, viajes y arte digital en Photoshop. Arte, pasión y visión en cada imagen.">
+<meta property="og:title" content="Cristian Zúñiga Toledo · Fotógrafo">
+<meta property="og:description" content="Fotógrafo y reportero gráfico en Las Terrenas, Samaná. Arte, pasión y visión en cada imagen.">
+<meta property="og:image" content="img/estudio-rojo.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E0B0B">
+<style>[hidden]{display:none!important}body{margin:0}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  /* Layout: a gallery that glows with the photo on show. Portrait frame hero with the name around it, photo-to-mural slider, stacked Samaná sunsets, filterable gallery, a find-the-photographer game, services, booking. */
+  --ink:#0E0B0B;
+  --ink-2:#171212;
+  --ink-3:#211A19;
+  --bone:#F3EDE6;
+  --mute:#A0958E;
+  --line:rgba(243,237,230,.14);
+  --red:#E0262F;
+  --gold:#F3A73A;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --sans:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --gut:clamp(20px,4vw,64px);
+  color-scheme:dark;
+}
+html{background:var(--ink)}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+*{box-sizing:border-box}
+a{color:inherit}
+button{font:inherit;color:inherit}
+img{display:block;max-width:100%}
+::selection{background:var(--red);color:#fff}
+.g{padding-left:max(var(--gut),env(safe-area-inset-left,0px));padding-right:max(var(--gut),env(safe-area-inset-right,0px))}
+.dsp{font-family:var(--display);font-weight:800;font-stretch:75%;font-variation-settings:"wdth" 75;text-transform:uppercase;line-height:.84;letter-spacing:-.02em;margin:0}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.01em}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.mute{color:var(--mute)}
+.red{color:var(--red)}
+.ln{display:block;overflow:hidden;padding-bottom:.05em;margin-bottom:-.05em}
+.ln-i,.ch{display:inline-block;will-change:transform}
+:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.h2{font-size:clamp(64px,9.6vw,168px)}
+.mh{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+
+/* Preloader */
+.pre{position:fixed;inset:0;z-index:100;background:var(--ink);display:flex;flex-direction:column;justify-content:space-between;padding-block:max(26px,env(safe-area-inset-top,0px)) 26px;animation:preOut .5s ease 8s forwards}
+.pre-row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.pre-count{font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;font-size:clamp(130px,26vw,400px);line-height:.8;font-variant-numeric:tabular-nums}
+.pre-bar{position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:0 50%}
+.flash{position:fixed;inset:0;z-index:101;background:#fff;opacity:0;pointer-events:none}
+@keyframes preOut{to{opacity:0;visibility:hidden}}
+
+/* Header */
+.hd{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:18px;color:#fff;mix-blend-mode:difference;pointer-events:none}
+.hd > *{pointer-events:auto}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo b{font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;font-size:24px;text-transform:uppercase;letter-spacing:.01em}
+.logo span{font-family:var(--serif);font-style:italic;font-size:18px;opacity:.8}
+.nav{display:flex;gap:26px;align-items:center}
+.nav a{text-decoration:none;font-size:14px;font-weight:600;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:100% 50%;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:0 50%}
+.lang{display:flex;border:1px solid currentColor;border-radius:999px;overflow:hidden}
+.lang button{min-height:34px;min-width:44px;padding:0 10px;border:0;background:transparent;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.08em}
+.lang button[aria-pressed="true"]{background:#fff;color:#000}
+
+/* Hero */
+.hero{position:relative;min-height:max(760px,100svh);overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-block:96px 40px}
+.glow{position:absolute;left:50%;top:50%;width:150vmax;height:150vmax;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,var(--gc,rgba(224,38,47,.5)) 0%,rgba(14,11,11,0) 55%);opacity:.85;pointer-events:none}
+.hero-name{position:relative;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center}
+.n1{font-size:clamp(84px,17.5vw,300px);position:relative;z-index:1;white-space:nowrap}
+.n2{font-size:clamp(46px,10.4vw,180px);position:relative;z-index:3;white-space:nowrap;margin-top:-.42em;color:#fff;mix-blend-mode:difference}
+.frame-wrap{position:relative;z-index:2;margin-top:-.62em;font-size:clamp(84px,17.5vw,300px);display:flex;justify-content:center;width:100%}
+.frame{position:relative;height:min(68vh,720px);aspect-ratio:4 / 5;max-width:calc(100vw - 2 * var(--gut));overflow:hidden;background:var(--ink-3);box-shadow:0 60px 120px rgba(0,0,0,.6);font-size:17px;cursor:pointer}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+.side{position:absolute;z-index:4;bottom:40px;display:flex;flex-direction:column;gap:8px;max-width:260px}
+.side.l{left:max(var(--gut),env(safe-area-inset-left,0px))}
+.side.r{right:max(var(--gut),env(safe-area-inset-right,0px));text-align:right;align-items:flex-end}
+.cap-t{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1;overflow:hidden}
+.cap-t span{display:inline-block}
+.dots{display:flex;gap:2px}
+.dot{width:36px;height:40px;padding:0;border:0;background:transparent;cursor:pointer;position:relative}
+.dot::before{content:"";position:absolute;left:4px;right:4px;top:50%;height:2px;background:var(--bone);opacity:.3}
+.dot i{position:absolute;left:4px;right:4px;top:50%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:0 50%}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 24px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;transition:background .3s,color .3s;border:0;cursor:pointer}
+.btn-r{background:var(--red);color:#fff}.btn-r:hover{background:var(--bone);color:var(--ink)}
+.btn-o{border:1px solid var(--line);background:transparent;color:var(--bone)}.btn-o:hover{background:var(--bone);color:var(--ink)}
+
+/* Statement */
+.statement{padding-block:clamp(120px,15vw,210px) clamp(90px,10vw,140px)}
+.st-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:40px}
+.st-text{margin:0;font-size:clamp(32px,4.4vw,72px);line-height:1.06;letter-spacing:-.025em;font-weight:500;text-wrap:balance}
+.st-text .w{display:inline-block}
+
+/* Mural compare */
+.mural{padding-bottom:clamp(110px,12vw,170px)}
+.cmp{position:relative;aspect-ratio:16 / 9;max-width:100%;overflow:hidden;background:var(--ink-3);user-select:none;touch-action:pan-y}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp .top{clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.cmp .knob{position:absolute;top:0;bottom:0;left:var(--p,50%);width:2px;margin-left:-1px;background:#fff;pointer-events:none;z-index:3}
+.cmp .knob b{position:absolute;top:50%;left:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;margin:0}
+.cmp .tag{position:absolute;top:16px;z-index:2;padding:8px 12px;border-radius:999px;background:rgba(14,11,11,.7);backdrop-filter:blur(8px)}
+.cmp .tag.l{left:16px}.cmp .tag.r{right:16px}
+.mfoot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+
+/* Band */
+.band{background:var(--red);color:#fff;overflow:hidden;padding-block:16px}
+.mq{display:flex;width:max-content;will-change:transform}
+.mq span{font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;font-size:clamp(52px,7vw,120px);text-transform:uppercase;line-height:1;padding-inline:26px;white-space:nowrap}
+.mq .o{color:transparent;-webkit-text-stroke:1.5px #fff}
+.mq .s{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none}
+
+/* Sunset stack */
+.stack{position:relative}
+.panel{position:sticky;top:0;height:100svh;min-height:560px;overflow:hidden}
+.panel .in{position:absolute;inset:0;will-change:transform,filter}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.panel .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,11,.35),rgba(14,11,11,0) 35%,rgba(14,11,11,0) 60%,rgba(14,11,11,.75))}
+.panel .word{position:absolute;left:0;right:0;bottom:7vh;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.panel .word span.dsp{font-size:clamp(80px,15vw,260px);color:#fff;text-shadow:0 10px 60px rgba(0,0,0,.35)}
+.panel .meta{position:absolute;top:84px;left:0;right:0;display:flex;justify-content:space-between;gap:16px;color:#fff}
+
+/* Gallery */
+.gal{padding-block:clamp(110px,12vw,180px)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px}
+.ft-b{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:15px;font-weight:600;transition:background .25s,color .25s,border-color .25s}
+.ft-b:hover{border-color:var(--bone)}
+.ft-b[aria-pressed="true"]{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.ft-b sup{font-family:var(--mono);font-size:10px;margin-left:4px;opacity:.6}
+.grid{column-count:3;column-gap:22px}
+.item{break-inside:avoid;margin:0 0 22px;display:block;width:100%;padding:0;border:0;background:transparent;text-align:left;cursor:pointer;color:var(--bone)}
+.item[hidden]{display:none!important}
+.item .ph{position:relative;overflow:hidden;background:var(--ink-3)}
+.item img{width:100%;height:auto;transition:transform 1.2s cubic-bezier(.2,.7,.1,1),filter .6s}
+.item:hover img{transform:scale(1.05)}
+.grid:hover .item img{filter:saturate(.6) brightness(.7)}
+.grid .item:hover img{filter:none}
+.item .cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:10px}
+.item .cap b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:24px;line-height:1}
+
+/* Find Cristian */
+.find{background:var(--ink-2);border-block:1px solid var(--line);padding-block:clamp(110px,12vw,170px)}
+.fgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px);align-items:center}
+.stage-wrap{display:flex;justify-content:center}
+.stage{position:relative;display:inline-block;max-width:100%;cursor:crosshair;user-select:none}
+.stage img{max-height:78vh;width:auto;max-width:100%;height:auto}
+.mark{position:absolute;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%)}
+.mark.ok{border:3px solid #fff;box-shadow:0 0 0 6px rgba(224,38,47,.85),0 0 60px rgba(224,38,47,.8)}
+.mark.no{width:46px;height:46px;border:2px solid rgba(255,255,255,.8)}
+.mark.no::before,.mark.no::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:2px;background:#fff;transform:translate(-50%,-50%) rotate(45deg)}
+.mark.no::after{transform:translate(-50%,-50%) rotate(-45deg)}
+.mark.hint{border:2px dashed rgba(255,255,255,.75);background:rgba(224,38,47,.12)}
+.thumbs{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.th{position:relative;width:72px;height:88px;padding:0;border:2px solid transparent;border-radius:6px;overflow:hidden;cursor:pointer;background:var(--ink-3)}
+.th img{width:100%;height:100%;object-fit:cover}
+.th[aria-pressed="true"]{border-color:var(--bone)}
+.th .ok{position:absolute;right:4px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;display:none;align-items:center;justify-content:center;font-weight:700}
+.th.found .ok{display:flex}
+.score{font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;font-size:clamp(64px,7vw,110px);line-height:.85}
+.fmsg{min-height:28px;font-weight:600}
+
+/* Services */
+.svc{padding-block:clamp(100px,11vw,170px)}
+.srow{position:relative;display:grid;grid-template-columns:70px minmax(0,5fr) minmax(0,4fr) minmax(0,2fr);gap:32px;align-items:center;padding-block:34px;border-top:1px solid var(--line);overflow:hidden;isolation:isolate;text-decoration:none}
+.srow:last-child{border-bottom:1px solid var(--line)}
+.srow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:0;transform:scale(1.1);transition:opacity .7s,transform 1.4s cubic-bezier(.2,.7,.1,1)}
+.srow::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,11,11,.92),rgba(14,11,11,.6));opacity:0;transition:opacity .7s}
+.srow:hover img{opacity:1;transform:scale(1)}
+.srow:hover::after{opacity:1}
+.srow h3{margin:0;font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;text-transform:uppercase;font-size:clamp(40px,4.6vw,80px);line-height:.88;letter-spacing:-.02em;transition:transform .7s cubic-bezier(.2,.7,.1,1)}
+.srow:hover h3{transform:translateX(16px)}
+.srow p{margin:0;color:rgba(243,237,230,.82)}
+.srow .pr{text-align:right;display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.srow .pr b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:28px;line-height:1}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:end;padding-bottom:clamp(110px,12vw,170px)}
+.about .ph{position:relative;overflow:hidden;aspect-ratio:3 / 4;max-width:100%}
+.about .ph img{width:100%;height:118%;object-fit:cover;position:absolute;top:-9%;left:0}
+.about p.big{margin:0;font-size:clamp(26px,2.8vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 28px;margin:32px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.facts dt{color:var(--mute)}.facts dd{margin:0}
+.steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.steps li{display:flex;flex-direction:column;gap:12px;border-top:2px solid var(--bone);padding-top:20px}
+.steps li:last-child{border-top-color:var(--red)}
+.steps b{font-family:var(--display);font-weight:800;font-variation-settings:"wdth" 75;text-transform:uppercase;font-size:clamp(30px,2.8vw,44px);line-height:.9}
+.steps p{margin:0;color:var(--mute)}
+
+/* Contact */
+.ct{position:relative;background:var(--bone);color:var(--ink);padding-block:clamp(110px,13vw,190px) 40px;overflow:hidden}
+.ct ::selection{background:var(--ink);color:var(--bone)}
+.ct-h{font-size:clamp(78px,13vw,230px)}
+.ct-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;margin-top:72px;align-items:start}
+.wa{display:inline-flex;align-items:center;gap:14px;min-height:64px;padding:0 30px;border-radius:999px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:17px}
+.wa:hover{background:var(--ink)}
+.ct-dl{display:grid;grid-template-columns:auto 1fr;gap:12px 28px;margin:36px 0 0;padding-top:22px;border-top:1px solid rgba(14,11,11,.2)}
+.ct-dl dt{color:#6B605A}.ct-dl dd{margin:0;user-select:all}
+.form{display:flex;flex-direction:column;gap:26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(14,11,11,.3);background:transparent;color:var(--ink);font-size:15px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.field label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6B605A;margin-bottom:8px}
+.field input,.field textarea{width:100%;border:0;border-bottom:1px solid rgba(14,11,11,.35);background:transparent;color:var(--ink);font:500 19px/1.4 var(--sans);padding:8px 0;border-radius:0}
+.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--red)}
+.send{width:140px;height:140px;border-radius:50%;border:0;background:var(--ink);color:var(--bone);font-weight:700;font-size:15px;line-height:1.25;cursor:pointer;transition:background .3s}
+.send:hover{background:var(--red)}
+.status{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6B605A}
+.ftr{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:110px;padding-top:22px;border-top:1px solid rgba(14,11,11,.2)}
+.pill{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(14,11,11,.35);background:transparent;color:var(--ink);cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.big{overflow:hidden;margin-top:30px}
+.big .mq span{font-size:clamp(110px,20vw,340px);color:var(--ink);padding-inline:36px}
+.big .mq .s{color:var(--red)}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(14,11,11,.97);display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:16px;padding-block:max(18px,env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-bottom,0px))}
+.lb-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.lb-stage{min-height:0;display:flex;align-items:center;justify-content:center}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain}
+.lb-b{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.lb-b:hover{border-color:var(--bone)}
+.lb-t{font-family:var(--serif);font-style:italic;font-size:clamp(28px,3vw,44px);line-height:1}
+
+/* Cursor + grain */
+.cur{position:fixed;left:0;top:0;z-index:90;pointer-events:none;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:#fff;mix-blend-mode:difference}
+.ring{position:fixed;left:0;top:0;z-index:90;pointer-events:none;width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(255,255,255,.9);mix-blend-mode:difference;display:flex;align-items:center;justify-content:center;transition:width .45s cubic-bezier(.2,.7,.1,1),height .45s cubic-bezier(.2,.7,.1,1),background .3s}
+.ring span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#000;opacity:0;transition:opacity .25s;white-space:nowrap}
+.ring.lab{width:100px;height:100px;background:#fff}
+.ring.lab span{opacity:1}
+.ring.lnk{width:64px;height:64px}
+html.has-cur,html.has-cur a,html.has-cur button,html.has-cur input[type=range],html.has-cur .stage,html.has-cur .frame{cursor:none}
+.grain{position:fixed;inset:-50%;z-index:70;pointer-events:none;opacity:.06;animation:grain 1s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}100%{transform:translate(0,0)}}
+
+@media (max-width:1100px){
+  .side{position:relative;bottom:auto;left:auto!important;right:auto!important;max-width:none;text-align:left!important;align-items:flex-start!important}
+  .hero-sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:40px}
+  .srow{grid-template-columns:56px minmax(0,1fr) minmax(0,1fr)}
+  .srow .pr{grid-column:2 / -1;align-items:flex-start;text-align:left}
+  .grid{column-count:2}
+}
+@media (max-width:860px){
+  .nav a{display:none}
+  .st-grid,.fgrid,.about,.ct-grid{grid-template-columns:minmax(0,1fr);gap:32px}
+  .cmp{aspect-ratio:4 / 3}
+  .mfoot{grid-template-columns:minmax(0,1fr)}
+  .frame{height:auto;width:100%;max-width:520px}
+  .frame-wrap{margin-top:-.18em}
+  .stage img{max-height:none}
+}
+@media (max-width:560px){
+  .hero-sides{grid-template-columns:minmax(0,1fr)}
+  .srow{grid-template-columns:minmax(0,1fr)}
+  .srow .pr{grid-column:auto}
+  .steps,.fields{grid-template-columns:minmax(0,1fr)}
+  .grid{column-gap:12px}
+  .item{margin-bottom:12px}
+  .item .cap b{font-size:18px}
+  .item .cap .mono{display:none}
+  .logo span{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .pre,.flash{display:none}
+}
+</style>
+
+</head>
+<body>
+<div class="pre" id="pre" aria-hidden="true">
+  <div class="pre-row g mono"><span>Cristian Zúñiga Toledo</span><span>Las Terrenas · Samaná</span></div>
+  <div class="pre-row g"><span class="pre-count" id="preCount">000</span><span class="mono" data-i="pre">Revelando fotos</span></div>
+  <span class="pre-bar" id="preBar"></span>
+</div>
+<div class="flash" id="flash" aria-hidden="true"></div>
+
+<header class="hd g">
+  <a class="logo" href="#top" data-scroll><b>Cristian Z. Toledo</b><span data-i="logoSub">fotografía</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#obra" data-scroll data-i="navWork">Obra</a>
+    <a href="#buscalo" data-scroll data-i="navFind">Búscalo</a>
+    <a href="#servicios" data-scroll data-i="navSvc">Servicios</a>
+    <a href="#contacto" data-scroll data-i="navCt">Reservar</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">ES</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero g" id="top" aria-label="Cristian Zúñiga Toledo">
+    <div class="glow" id="glow" aria-hidden="true"></div>
+    <div class="hero-name">
+      <h1 class="dsp n1" id="n1" aria-label="Cristian Zúñiga Toledo">Cristian</h1>
+      <div class="frame-wrap">
+        <div class="frame" id="frame" data-cursor="Ver" role="img" aria-label="Fotografías de Cristian Zúñiga Toledo">
+          <canvas id="gl"></canvas>
+        </div>
+      </div>
+      <span class="dsp n2" id="n2" aria-hidden="true">Zúñiga Toledo</span>
+    </div>
+    <div class="hero-sides">
+      <div class="side l hfade">
+        <span class="mono red" data-i="heroKick">Fotógrafo &amp; reportero gráfico</span>
+        <span class="it" style="font-size:24px;line-height:1.1" data-i="tag">Arte, pasión y visión en cada imagen.</span>
+        <p style="margin:0;font-weight:500" data-i="heroSub">Retratos, reportaje, viajes y arte en Photoshop desde Las Terrenas, Samaná.</p>
+        <span class="mono mute">19.3110° N · 69.5420° W</span>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <a class="btn btn-r magnet" href="#contacto" data-scroll data-i="ctaBook">Reservar sesión</a>
+        </div>
+      </div>
+      <div class="side r hfade">
+        <span class="mono mute" id="capN">01 / 06</span>
+        <span class="cap-t"><span id="capT">Estudio en rojo</span></span>
+        <span class="mono mute" id="capM">Retrato de estudio</span>
+        <div class="dots" id="dots" role="group" aria-label="Fotos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement g">
+    <div class="st-grid">
+      <span class="mono mute" data-i="stKick">(Sobre su trabajo)</span>
+      <p class="st-text" id="stText" data-i="st">Cristian fotografía gente con carácter, colores que no se olvidan y los atardeceres de Samaná. Y en su arte digital siempre se esconde él mismo, vestido de rojo y con la cámara en la mano.</p>
+    </div>
+  </section>
+
+  <!-- MURAL -->
+  <section class="mural g" id="mural" aria-label="De foto a mural">
+    <div class="mh">
+      <h2 class="dsp h2 rv"><span class="ln"><span class="ln-i" data-i="muH1">De foto</span></span><span class="ln"><span class="ln-i"><span class="it red" data-i="muH2">a mural.</span></span></span></h2>
+      <p class="mute" style="margin:0;max-width:34ch" data-i="muP">Desliza para comparar su atardecer en Samaná con el mural que pintaron a partir de él, firmado con su nombre.</p>
+    </div>
+    <div class="cmp" id="cmp" data-cursor="Desliza">
+      <img src="img/mural.jpg" alt="Mural en la calle pintado a partir de la foto de Cristian" loading="lazy">
+      <img class="top" src="img/samana-atardecer.jpg" alt="Atardecer en la playa de Samaná, fotografía de Cristian" loading="lazy">
+      <span class="tag l mono" data-i="muL">La foto</span>
+      <span class="tag r mono" data-i="muR">El mural</span>
+      <span class="knob" aria-hidden="true"><b>↔</b></span>
+      <input type="range" id="cmpR" min="0" max="100" value="50" aria-label="Comparar foto y mural">
+    </div>
+    <div class="mfoot mono">
+      <span><span class="mute" data-i="mf1">Lugar</span><br>Samaná, R.D.</span>
+      <span><span class="mute" data-i="mf2">Original</span><br><span data-i="mf2v">Atardecer, palmeras y velero</span></span>
+      <span><span class="mute" data-i="mf3">En la pared</span><br><span>“Fotografía Cristian Zúñiga Toledo”</span></span>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"><div class="mq" id="mq1">
+    <span>Samaná</span><span class="s">✦</span><span class="o">Las Terrenas</span><span class="s">✦</span><span>Las Galeras</span><span class="s">✦</span><span class="o">Santa Bárbara</span><span class="s">✦</span>
+    <span>Samaná</span><span class="s">✦</span><span class="o">Las Terrenas</span><span class="s">✦</span><span>Las Galeras</span><span class="s">✦</span><span class="o">Santa Bárbara</span><span class="s">✦</span>
+  </div></div>
+
+  <!-- SUNSET STACK -->
+  <section class="stack" aria-label="Samaná a la hora dorada">
+    <div class="panel"><div class="in"><img src="img/samana-tormenta.jpg" alt="Cielo de fuego sobre la costa de Samaná" loading="lazy"><div class="sh"></div></div>
+      <div class="meta g mono"><span>01 / 03</span><span data-i="p1m">Cielo de fuego</span></div>
+      <div class="word g"><span class="dsp">Samaná</span></div></div>
+    <div class="panel"><div class="in"><img src="img/samana-paseo.jpg" alt="Paseo con palmeras al atardecer en Samaná" loading="lazy"><div class="sh"></div></div>
+      <div class="meta g mono"><span>02 / 03</span><span data-i="p2m">Paseo al atardecer</span></div>
+      <div class="word g"><span class="dsp it" data-i="p2w">a la hora</span></div></div>
+    <div class="panel"><div class="in"><img src="img/atardecer-violeta.jpg" alt="Cielo violeta y naranja con palmeras en la playa de Samaná" loading="lazy"><div class="sh"></div></div>
+      <div class="meta g mono"><span>03 / 03</span><span data-i="p3m">Cielo violeta</span></div>
+      <div class="word g"><span class="dsp" data-i="p3w">dorada.</span></div></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gal g" id="obra" aria-label="Obra">
+    <div class="mh">
+      <h2 class="dsp h2 rv"><span class="ln"><span class="ln-i" data-i="obH">Obra</span></span></h2>
+      <p class="mute" style="margin:0;max-width:34ch" data-i="obP">Filtra por tipo de trabajo y haz clic en cualquier foto para verla completa.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- FIND CRISTIAN -->
+  <section class="find g" id="buscalo" aria-label="Encuentra a Cristian">
+    <div class="fgrid">
+      <div>
+        <span class="mono red" data-i="fKick">Su firma secreta</span>
+        <h2 class="dsp h2 rv" style="margin-top:18px"><span class="ln"><span class="ln-i" data-i="fH1">¿Dónde está</span></span><span class="ln"><span class="ln-i"><span class="it red" data-i="fH2">Cristian?</span></span></span></h2>
+        <p style="margin:26px 0 0;font-size:19px;max-width:42ch;color:rgba(243,237,230,.86)" data-i="fP">En su arte digital, Cristian se esconde a sí mismo en miniatura, vestido de rojo y con la cámara. Haz clic donde creas que está.</p>
+        <div style="display:flex;align-items:flex-end;gap:24px;margin-top:32px;flex-wrap:wrap">
+          <span class="score" id="score">0/6</span>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <span class="fmsg" id="fmsg" role="status" data-i="fStart">Empieza por la primera.</span>
+            <button type="button" class="btn btn-o" id="hint" style="min-height:44px" data-i="fHint">Dame una pista</button>
+          </div>
+        </div>
+        <div class="thumbs" id="thumbs" role="group" aria-label="Elige una obra"></div>
+      </div>
+      <div class="stage-wrap"><div class="stage" id="stage" data-cursor="Buscar"><img id="stageImg" src="img/estudio-rojo.jpg" alt="Obra de Cristian con su miniatura escondida"></div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="svc g" id="servicios" aria-label="Servicios">
+    <div class="mh">
+      <h2 class="dsp h2 rv"><span class="ln"><span class="ln-i" data-i="svH">Servicios</span></span></h2>
+      <p class="mute" style="margin:0;max-width:34ch" data-i="svP">En estudio o en cualquier rincón de Samaná. Todas las sesiones incluyen edición.</p>
+    </div>
+    <a class="srow" href="#contacto" data-scroll data-cursor="Reservar"><img src="img/quinceanera.jpg" alt="" loading="lazy">
+      <span class="mono mute">01</span><h3 data-i="s1t">Retrato &amp; estudio</h3><p data-i="s1p">Sesiones individuales, quinceañeras, parejas y moda, en estudio o en exterior.</p>
+      <span class="pr"><span class="mono mute" data-i="from">Desde</span><b>[RD$ precio]</b></span></a>
+    <a class="srow" href="#contacto" data-scroll data-cursor="Reservar"><img src="img/samana-paseo.jpg" alt="" loading="lazy">
+      <span class="mono mute">02</span><h3 data-i="s2t">Hoteles, villas &amp; tours</h3><p data-i="s2p">Fotos que venden Samaná: habitaciones, playas, excursiones y atardeceres.</p>
+      <span class="pr"><span class="mono mute" data-i="from">Desde</span><b>[RD$ precio]</b></span></a>
+    <a class="srow" href="#contacto" data-scroll data-cursor="Reservar"><img src="img/fiesta-samana.jpg" alt="" loading="lazy">
+      <span class="mono mute">03</span><h3 data-i="s3t">Redes para negocios</h3><p data-i="s3p">Contenido para Instagram y Facebook de restaurantes, tiendas, eventos y emprendedores.</p>
+      <span class="pr"><span class="mono mute" data-i="from">Desde</span><b>[RD$ precio]</b></span></a>
+    <a class="srow" href="#contacto" data-scroll data-cursor="Reservar"><img src="img/arte-turbante.jpg" alt="" loading="lazy">
+      <span class="mono mute">04</span><h3 data-i="s4t">Edición &amp; arte digital</h3><p data-i="s4p">Retoque profesional y piezas artísticas en Photoshop a partir de tus fotos.</p>
+      <span class="pr"><span class="mono mute" data-i="from">Desde</span><b>[RD$ precio]</b></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about g" aria-label="Sobre Cristian">
+    <div class="ph"><img src="img/cristian-camara.jpg" alt="Cristian Zúñiga Toledo con su cámara" id="aboutImg" loading="lazy"></div>
+    <div>
+      <span class="mono red" data-i="abKick">El fotógrafo</span>
+      <p class="big" style="margin-top:22px" data-i="abP">Cristian Zúñiga Toledo es fotógrafo y reportero gráfico en Las Terrenas, siempre vestido de rojo y con la cámara lista. Sus viajes lo han llevado de las escalinatas de Varanasi a la pagoda Shwedagon de Myanmar y las comunidades guna de Panamá.</p>
+      <dl class="facts mono">
+        <dt data-i="f1">Base</dt><dd>Las Terrenas, Samaná, República Dominicana</dd>
+        <dt data-i="f2">Especialidad</dt><dd data-i="f2v">Retrato, viajes y arte digital</dd>
+        <dt data-i="f3">Idiomas</dt><dd data-i="f3v">Español · [otros]</dd>
+      </dl>
+      <ol class="steps">
+        <li><span class="mono mute" data-i="st1n">Paso 1</span><b data-i="st1t">Escríbele</b><p data-i="st1p">Por WhatsApp o el formulario. Cuéntale qué quieres.</p></li>
+        <li><span class="mono mute" data-i="st2n">Paso 2</span><b data-i="st2t">Elige la luz</b><p data-i="st2p">Estudio, playa, amanecer o atardecer en Samaná.</p></li>
+        <li><span class="mono mute" data-i="st3n">Paso 3</span><b data-i="st3t">Recibe tus fotos</b><p data-i="st3p">Editadas y listas para redes en [X] días.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="ct g" id="contacto" aria-label="Reservar">
+    <span class="mono" style="color:#6B605A" data-i="ctKick">Reservas abiertas · Samaná</span>
+    <h2 class="dsp ct-h rv" style="margin-top:22px"><span class="ln"><span class="ln-i" data-i="ctH1">Tu foto,</span></span><span class="ln"><span class="ln-i"><span class="it red" data-i="ctH2">la próxima.</span></span></span></h2>
+    <div class="ct-grid">
+      <div>
+        <a class="wa magnet" href="https://wa.me/32456264285" target="_blank" rel="noopener" id="waBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.4z"></path></svg><span data-i="wa">Escribir por WhatsApp</span></a>
+        <dl class="ct-dl mono">
+          <dt>WhatsApp</dt><dd>+32 456 26 4285</dd>
+          <dt data-i="ctPhone">Teléfono</dt><dd>+1 809 924 5955</dd>
+          <dt>Email</dt><dd>zunigacristian53@gmail.com</dd>
+          <dt data-i="ctZone">Zona</dt><dd>Las Terrenas, Samaná · República Dominicana</dd>
+        </dl>
+      </div>
+      <form class="form" id="form" aria-label="Formulario de reserva">
+        <div>
+          <span class="mono" style="color:#6B605A;display:block;margin-bottom:12px" data-i="fWhat">Quiero</span>
+          <div class="chips" role="group" aria-label="Tipo de sesión">
+            <button type="button" class="chip" aria-pressed="true" data-i="c1">Una sesión de fotos</button>
+            <button type="button" class="chip" aria-pressed="false" data-i="c2">Fotos para mi negocio</button>
+            <button type="button" class="chip" aria-pressed="false" data-i="c3">Fotos de hotel o villa</button>
+            <button type="button" class="chip" aria-pressed="false" data-i="c4">Edición en Photoshop</button>
+          </div>
+        </div>
+        <div class="fields">
+          <div class="field"><label for="f-name" data-i="fName">Nombre</label><input id="f-name" type="text" autocomplete="name"></div>
+          <div class="field"><label for="f-phone" data-i="fPhone">WhatsApp o email</label><input id="f-phone" type="text"></div>
+          <div class="field"><label for="f-date" data-i="fDate">Fecha</label><input id="f-date" type="text"></div>
+          <div class="field"><label for="f-place" data-i="fPlace">Lugar</label><input id="f-place" type="text"></div>
+        </div>
+        <div class="field"><label for="f-msg" data-i="fMsg">Cuéntale tu idea</label><textarea id="f-msg" rows="3" style="resize:vertical"></textarea></div>
+        <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+          <button type="submit" class="send magnet" data-i="fSend">Enviar →</button>
+          <span class="status" id="status" role="status"></span>
+        </div>
+      </form>
+    </div>
+    <div class="ftr mono"><span>© 2026 Cristian Zúñiga Toledo</span><span>Instagram · Facebook · WhatsApp</span><button type="button" class="pill" id="toTop" data-i="top">Volver arriba ↑</button></div>
+    <div class="big" aria-hidden="true"><div class="mq" id="mq2"><span>Cristian</span><span class="s">Zúñiga Toledo</span><span>Cristian</span><span class="s">Zúñiga Toledo</span></div></div>
+  </section>
+</main>
+
+<div class="lb g" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbT">
+  <div class="lb-row"><span class="mono" id="lbN">01 / 17</span><button type="button" class="lb-b" id="lbX" data-i="close">Cerrar</button></div>
+  <div class="lb-stage"><img id="lbImg" src="img/estudio-rojo.jpg" alt=""></div>
+  <div class="lb-row"><div style="display:flex;flex-direction:column;gap:6px"><span class="lb-t" id="lbT"></span><span class="mono mute" id="lbM"></span></div><div style="display:flex;gap:8px"><button type="button" class="lb-b" id="lbP" aria-label="Anterior">←</button><button type="button" class="lb-b" id="lbNx" aria-label="Siguiente">→</button></div></div>
+</div>
+
+<div class="cur" id="cur" hidden></div>
+<div class="ring" id="ring" hidden><span id="ringL">Ver</span></div>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="js/vendor/lenis.min.js"></script>
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const hasG = !!window.gsap && !!window.ScrollTrigger;
+  const hasFlip = hasG && !!window.Flip;
+  if (hasG) gsap.registerPlugin(ScrollTrigger);
+  if (hasFlip) gsap.registerPlugin(Flip);
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
+
+  /* ---------------- Content ---------------- */
+  const W = (src, tags, es, en, fy) => ({ src: 'img/' + src + '.jpg', tags, es, en, fy: fy == null ? .42 : fy });
+  const WORKS = [
+    W('estudio-rojo', ['glam'], ['Estudio en rojo', 'Estudio & glamour'], ['Studio in red', 'Studio & glamour'], .42),
+    W('arte-turbante', ['arte'], ['Turbante', 'Arte digital'], ['The headwrap', 'Digital art'], .4),
+    W('quinceanera', ['retrato'], ['La corona', 'Retrato en exterior'], ['The crown', 'Outdoor portrait'], .35),
+    W('samana-tormenta', ['samana'], ['Cielo de fuego', 'Paisaje · Samaná'], ['Sky on fire', 'Landscape · Samaná']),
+    W('rajasthan', ['viajes'], ['Terciopelo y oro', 'Viajes · India'], ['Velvet and gold', 'Travel · India'], .3),
+    W('trenzas', ['retrato'], ['Mirada azul', 'Retrato'], ['Blue gaze', 'Portrait'], .4),
+    W('arte-india', ['arte'], ['Mirada turquesa', 'Arte digital'], ['Turquoise gaze', 'Digital art'], .4),
+    W('dos-palmas', ['samana'], ['Dos palmas', 'Paisaje · Samaná'], ['Two palms', 'Landscape · Samaná']),
+    W('guna-yala', ['viajes'], ['Oro y molas', 'Culturas · Guna Yala, Panamá'], ['Gold and molas', 'Cultures · Guna Yala, Panama'], .3),
+    W('fiesta-samana', ['retrato', 'samana'], ['Día de playa', 'Gente de Samaná'], ['Beach day', 'People of Samaná'], .3),
+    W('arte-digital', ['arte'], ['Fractal', 'Arte digital'], ['Fractal', 'Digital art']),
+    W('orquidea', ['retrato'], ['La orquídea', 'Retrato de noche'], ['The orchid', 'Night portrait']),
+    W('samana-paseo', ['samana'], ['Paseo al atardecer', 'Paisaje · Samaná'], ['Evening walk', 'Landscape · Samaná']),
+    W('playa-rosa', ['glam'], ['Rosa', 'Glamour en la playa'], ['Pink', 'Beach glamour']),
+    W('varanasi', ['viajes'], ['En los ghats', 'Viajes · Varanasi, India'], ['On the ghats', 'Travel · Varanasi, India'], .35),
+    W('arte-galaxia', ['arte', 'glam'], ['Galaxia', 'Arte digital'], ['Galaxy', 'Digital art']),
+    W('samana-atardecer', ['samana'], ['El atardecer del mural', 'Paisaje · Samaná'], ['The mural sunset', 'Landscape · Samaná']),
+    W('bandana', ['retrato'], ['Pañuelo blanco', 'Retrato'], ['White bandana', 'Portrait'], .4),
+    W('atardecer-violeta', ['samana'], ['Cielo violeta', 'Paisaje · Samaná'], ['Violet sky', 'Landscape · Samaná']),
+    W('sonrisa', ['retrato'], ['La sonrisa', 'Retrato'], ['The smile', 'Portrait'], .4),
+    W('rizos', ['retrato'], ['Rizos al sol', 'Retrato en la calle'], ['Curls in the sun', 'Street portrait'], .35),
+    W('carnaval', ['retrato', 'samana'], ['Carnaval', 'Carnaval dominicano'], ['Carnival', 'Dominican carnival'], .38),
+    W('arte-gafas', ['arte'], ['Jardín en los ojos', 'Arte digital'], ['Garden eyes', 'Digital art'], .45),
+    W('turbante-azul', ['retrato'], ['Turquesa', 'Retrato'], ['Turquoise', 'Portrait'], .4),
+    W('arte-labios', ['arte', 'glam'], ['Rojo', 'Arte digital'], ['Red', 'Digital art'], .5)
+  ];
+  const HERO = [0, 22, 21, 2, 4, 1];
+  const FILTERS = [['all', 'Todo', 'All'], ['retrato', 'Retrato', 'Portrait'], ['samana', 'Samaná', 'Samaná'], ['viajes', 'Viajes', 'Travel'], ['arte', 'Arte digital', 'Digital art'], ['glam', 'Glamour', 'Glamour']];
+  const FIND = [
+    { src: 'img/estudio-rojo.jpg', x: .89, y: .43, r: .13 },
+    { src: 'img/arte-turbante.jpg', x: .68, y: .88, r: .13 },
+    { src: 'img/arte-india.jpg', x: .13, y: .82, r: .14 },
+    { src: 'img/arte-galaxia.jpg', x: .11, y: .82, r: .13 },
+    { src: 'img/arte-gafas.jpg', x: .72, y: .5, r: .12 },
+    { src: 'img/arte-labios.jpg', x: .91, y: .86, r: .12 }
+  ];
+
+  const T = {
+    es: {
+      pre: 'Revelando fotos', logoSub: 'fotografía', navWork: 'Obra', navFind: 'Búscalo', navSvc: 'Servicios', navCt: 'Reservar',
+      heroKick: 'Fotógrafo & reportero gráfico', tag: 'Arte, pasión y visión en cada imagen.', heroSub: 'Retratos, reportaje, viajes y arte en Photoshop desde Las Terrenas, Samaná.', ctaBook: 'Reservar sesión', ctPhone: 'Teléfono',
+      stKick: '(Sobre su trabajo)', st: 'Cristian fotografía gente con carácter, colores que no se olvidan y los atardeceres de Samaná. Y en su arte digital siempre se esconde él mismo, vestido de rojo y con la cámara en la mano.',
+      muH1: 'De foto', muH2: 'a mural.', muP: 'Desliza para comparar su atardecer en Samaná con el mural que pintaron a partir de él, firmado con su nombre.', muL: 'La foto', muR: 'El mural',
+      mf1: 'Lugar', mf2: 'Original', mf2v: 'Atardecer, palmeras y velero', mf3: 'En la pared',
+      p1m: 'Cielo de fuego', p2m: 'Paseo al atardecer', p3m: 'Cielo violeta', p2w: 'a la hora', p3w: 'dorada.',
+      obH: 'Obra', obP: 'Filtra por tipo de trabajo y haz clic en cualquier foto para verla completa.',
+      fKick: 'Su firma secreta', fH1: '¿Dónde está', fH2: 'Cristian?', fP: 'En su arte digital, Cristian se esconde a sí mismo en miniatura, vestido de rojo y con la cámara. Haz clic donde creas que está.',
+      fStart: 'Empieza por la primera.', fHint: 'Dame una pista', fYes: '¡Lo encontraste!', fNo: 'Ahí no. Sigue buscando.', fAll: '¡Lo encontraste en todas! Así firma Cristian su arte.', fNext: 'Ya lo encontraste aquí. Prueba otra obra.',
+      svH: 'Servicios', svP: 'En estudio o en cualquier rincón de Samaná. Todas las sesiones incluyen edición.', from: 'Desde',
+      s1t: 'Retrato & estudio', s1p: 'Sesiones individuales, quinceañeras, parejas y moda, en estudio o en exterior.',
+      s2t: 'Hoteles, villas & tours', s2p: 'Fotos que venden Samaná: habitaciones, playas, excursiones y atardeceres.',
+      s3t: 'Redes para negocios', s3p: 'Contenido para Instagram y Facebook de restaurantes, tiendas, eventos y emprendedores.',
+      s4t: 'Edición & arte digital', s4p: 'Retoque profesional y piezas artísticas en Photoshop a partir de tus fotos.',
+      abKick: 'El fotógrafo', abP: 'Cristian Zúñiga Toledo es fotógrafo y reportero gráfico en Las Terrenas, siempre vestido de rojo y con la cámara lista. Sus viajes lo han llevado de las escalinatas de Varanasi a la pagoda Shwedagon de Myanmar y las comunidades guna de Panamá.',
+      f1: 'Base', f2: 'Especialidad', f2v: 'Fotografía, reportaje gráfico y arte digital', f3: 'Idiomas', f3v: 'Español · [otros]',
+      st1n: 'Paso 1', st1t: 'Escríbele', st1p: 'Por WhatsApp o el formulario. Cuéntale qué quieres.',
+      st2n: 'Paso 2', st2t: 'Elige la luz', st2p: 'Estudio, playa, amanecer o atardecer en Samaná.',
+      st3n: 'Paso 3', st3t: 'Recibe tus fotos', st3p: 'Editadas y listas para redes en [X] días.',
+      ctKick: 'Reservas abiertas · Samaná', ctH1: 'Tu foto,', ctH2: 'la próxima.', wa: 'Escribir por WhatsApp', ctZone: 'Zona',
+      fWhat: 'Quiero', c1: 'Una sesión de fotos', c2: 'Fotos para mi negocio', c3: 'Fotos de hotel o villa', c4: 'Edición en Photoshop',
+      fName: 'Nombre', fPhone: 'WhatsApp o email', fDate: 'Fecha', fPlace: 'Lugar', fMsg: 'Cuéntale tu idea', fSend: 'Enviar →',
+      sent: 'Maqueta: en la web real esto le llega a Cristian.', waNote: 'Aquí irá su número de WhatsApp.', top: 'Volver arriba ↑', close: 'Cerrar',
+      cView: 'Ver', cSlide: 'Desliza', cBook: 'Reservar', cFind: 'Buscar'
+    },
+    en: {
+      pre: 'Developing photos', logoSub: 'photography', navWork: 'Work', navFind: 'Find him', navSvc: 'Services', navCt: 'Book',
+      heroKick: 'Photographer & photojournalist', tag: 'Art, passion and vision in every image.', heroSub: 'Portraits, reportage, travel and Photoshop art from Las Terrenas, Samaná.', ctaBook: 'Book a session', ctPhone: 'Phone',
+      stKick: '(About the work)', st: 'Cristian photographs people with character, colours you don\'t forget and Samaná sunsets. And in his digital art he always hides himself, dressed in red with his camera in hand.',
+      muH1: 'From photo', muH2: 'to mural.', muP: 'Drag to compare his Samaná sunset with the street mural painted from it, signed with his name.', muL: 'The photo', muR: 'The mural',
+      mf1: 'Place', mf2: 'Original', mf2v: 'Sunset, palm trees and a sailboat', mf3: 'On the wall',
+      p1m: 'Sky on fire', p2m: 'Evening walk', p3m: 'Violet sky', p2w: 'at golden', p3w: 'hour.',
+      obH: 'Work', obP: 'Filter by type of work and click any photo to see it full size.',
+      fKick: 'His secret signature', fH1: 'Where\'s', fH2: 'Cristian?', fP: 'In his digital art, Cristian hides a tiny version of himself, dressed in red with his camera. Click where you think he is.',
+      fStart: 'Start with the first one.', fHint: 'Give me a hint', fYes: 'You found him!', fNo: 'Not there. Keep looking.', fAll: 'You found him in all of them! That\'s how Cristian signs his art.', fNext: 'Already found here. Try another piece.',
+      svH: 'Services', svP: 'In the studio or anywhere in Samaná. Every session includes editing.', from: 'From',
+      s1t: 'Portrait & studio', s1p: 'Solo, quinceañera, couple and fashion sessions, in the studio or outdoors.',
+      s2t: 'Hotels, villas & tours', s2p: 'Photos that sell Samaná: rooms, beaches, excursions and sunsets.',
+      s3t: 'Social for business', s3p: 'Instagram and Facebook content for restaurants, shops, events and entrepreneurs.',
+      s4t: 'Editing & digital art', s4p: 'Professional retouching and Photoshop art pieces made from your photos.',
+      abKick: 'The photographer', abP: 'Cristian Zúñiga Toledo is a photographer and photojournalist in Las Terrenas, always dressed in red with his camera ready. His travels have taken him from the steps of Varanasi to Myanmar\'s Shwedagon Pagoda and the Guna communities of Panama.',
+      f1: 'Based in', f2: 'Speciality', f2v: 'Photography, photojournalism and digital art', f3: 'Languages', f3v: 'Spanish · [others]',
+      st1n: 'Step 1', st1t: 'Message him', st1p: 'On WhatsApp or with the form. Tell him what you want.',
+      st2n: 'Step 2', st2t: 'Pick the light', st2p: 'Studio, beach, sunrise or sunset in Samaná.',
+      st3n: 'Step 3', st3t: 'Get your photos', st3p: 'Edited and ready for social in [X] days.',
+      ctKick: 'Now booking · Samaná', ctH1: 'Your photo', ctH2: 'is next.', wa: 'Message on WhatsApp', ctZone: 'Area',
+      fWhat: 'I want', c1: 'A photo session', c2: 'Photos for my business', c3: 'Hotel or villa photos', c4: 'Photoshop editing',
+      fName: 'Name', fPhone: 'WhatsApp or email', fDate: 'Date', fPlace: 'Place', fMsg: 'Tell him your idea', fSend: 'Send →',
+      sent: 'Mockup: on the real site this goes to Cristian.', waNote: 'His WhatsApp number goes here.', top: 'Back to top ↑', close: 'Close',
+      cView: 'View', cSlide: 'Drag', cBook: 'Book', cFind: 'Search'
+    }
+  };
+  let lang = 'es';
+  try { const s = localStorage.getItem('czt-lang'); if (s === 'en' || s === 'es') lang = s; } catch (e) {}
+
+
+  /* ---------------- Gallery ---------------- */
+  const grid = $('#grid'), filters = $('#filters');
+  let filter = 'all';
+  grid.innerHTML = WORKS.map((w, i) => `<button type="button" class="item" data-i="${i}" data-tags="${w.tags.join(' ')}" data-cursor="Ver">
+      <span class="ph"><img src="${w.src}" alt="" loading="lazy"></span>
+      <span class="cap"><b></b><span class="mono mute"></span></span>
+    </button>`).join('');
+  function labelGallery() {
+    $$('.item', grid).forEach(el => { const w = WORKS[+el.dataset.i], t = w[lang]; el.querySelector('b').textContent = t[0]; el.querySelector('.mono').textContent = t[1]; el.querySelector('img').alt = t[0] + ', ' + t[1]; el.setAttribute('aria-label', t[0]); });
+    filters.innerHTML = FILTERS.map(f => { const n = f[0] === 'all' ? WORKS.length : WORKS.filter(w => w.tags.includes(f[0])).length; return `<button type="button" class="ft-b" data-f="${f[0]}" aria-pressed="${f[0] === filter}">${lang === 'es' ? f[1] : f[2]}<sup>${n}</sup></button>`; }).join('');
+  }
+  function visibleIdx() { return $$('.item', grid).filter(el => !el.hidden).map(el => +el.dataset.i); }
+  function setFilter(f) {
+    if (f === filter) return;
+    const items = $$('.item', grid);
+    const state = hasFlip && !reduce ? Flip.getState(items) : null;
+    filter = f;
+    items.forEach(el => { el.hidden = !(f === 'all' || el.dataset.tags.split(' ').includes(f)); });
+    $$('.ft-b', filters).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === f)));
+    if (state) Flip.from(state, { duration: .8, ease: 'power3.inOut', stagger: .025, absolute: true, scale: true,
+      onEnter: els => gsap.fromTo(els, { opacity: 0, scale: .85 }, { opacity: 1, scale: 1, duration: .6, stagger: .03 }),
+      onLeave: els => gsap.to(els, { opacity: 0, scale: .85, duration: .4 }),
+      onComplete: () => { if (hasG) ScrollTrigger.refresh(); } });
+    else if (hasG) ScrollTrigger.refresh();
+  }
+  filters.addEventListener('click', (e) => { const b = e.target.closest('.ft-b'); if (b) setFilter(b.dataset.f); });
+
+  /* ---------------- Language ---------------- */
+  let stTween = null;
+  function wordReveal() {
+    if (!hasG || reduce) return;
+    if (stTween) { if (stTween.scrollTrigger) stTween.scrollTrigger.kill(); stTween.kill(); }
+    const st = $('#stText'); st.innerHTML = st.textContent.split(' ').map(w => '<span class="w">' + w + '</span>').join(' ');
+    stTween = gsap.fromTo(st.querySelectorAll('.w'), { opacity: .12 }, { opacity: 1, stagger: .05, ease: 'none', scrollTrigger: { trigger: st, start: 'top 80%', end: 'bottom 50%', scrub: true } });
+  }
+  function applyLang(l, first) {
+    lang = l; document.documentElement.lang = l;
+    try { localStorage.setItem('czt-lang', l); } catch (e) {}
+    $$('[data-lang]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+    $$('[data-i]').forEach(el => { const v = T[l][el.dataset.i]; if (v != null) el.textContent = v; });
+    $$('[data-cursor="Ver"],[data-cursor="View"]').forEach(el => el.dataset.cursor = T[l].cView);
+    $('#cmp').dataset.cursor = T[l].cSlide;
+    $('#stage').dataset.cursor = T[l].cFind;
+    $$('.srow').forEach(el => el.dataset.cursor = T[l].cBook);
+    labelGallery();
+    if (!first) { wordReveal(); setCaption(S.a, false); updateScore(); if (hasG) ScrollTrigger.refresh(); }
+  }
+  $$('[data-lang]').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+  /* ---------------- Hero WebGL slideshow ---------------- */
+  const IMG = {}, GLOWS = {};
+  function loadImg(src) { return new Promise(res => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; }); }
+  function avgColor(im) { try { const c = document.createElement('canvas'); c.width = c.height = 10; const g = c.getContext('2d'); g.drawImage(im, 0, 0, 10, 10); const d = g.getImageData(0, 0, 10, 10).data; let r = 0, gg = 0, b = 0; for (let i = 0; i < d.length; i += 4) { r += d[i]; gg += d[i + 1]; b += d[i + 2]; } const n = d.length / 4, k = 1.3; return 'rgba(' + Math.min(255, r / n * k | 0) + ',' + Math.min(255, gg / n * k | 0) + ',' + Math.min(255, b / n * k | 0) + ',.55)'; } catch (e) { return 'rgba(224,38,47,.5)'; } }
+  const canvas = $('#gl');
+  let R = null;
+  const S = { a: 0, b: 0, prog: 0, time: 0, vel: 0, za: 1, zb: 1, mx: .5, my: .5 };
+  let busy = false, slideStart = performance.now(), tmx = .5, tmy = .5, pmx = .5, pmy = .5, heroVis = true;
+  function makeGL() {
+    const gl = canvas.getContext('webgl', { antialias: false, alpha: false });
+    if (!gl) return null;
+    const vs = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
+    const fs = `precision highp float;varying vec2 v;uniform sampler2D ta,tb;uniform float prog,time,vel,za,zb;uniform vec2 res,mouse,ia,ib,fa;
+      float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+      float n(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1.,0.)),u.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),u.x),u.y);}
+      float fbm(vec2 p){float s=0.,a=.5;for(int i=0;i<5;i++){s+=a*n(p);p*=2.03;a*=.5;}return s;}
+      vec2 cover(vec2 uv,vec2 img,float fy,float z){float rs=res.x/res.y,ri=img.x/img.y;vec2 s=rs<ri?vec2(rs/ri,1.):vec2(1.,ri/rs);vec2 c=vec2(.5,1.-fy);c=clamp(c,s*.5,1.-s*.5);return (uv-.5)*s/z+c;}
+      vec3 samp(sampler2D t,vec2 uv,float ab){return vec3(texture2D(t,uv+vec2(ab,0.)).r,texture2D(t,uv).g,texture2D(t,uv-vec2(ab,0.)).b);}
+      void main(){
+        vec2 uv=v;vec2 asp=vec2(res.x/res.y,1.);
+        float d=distance(uv*asp,mouse*asp);
+        float rip=exp(-d*5.)*vel;
+        uv-=normalize(uv-mouse+1e-5)*rip*.025*sin(d*22.-time*3.);
+        float nn=fbm(v*3.+vec2(time*.04,0.));
+        float t=nn*.6+(1.-v.y)*.4;
+        float m=smoothstep(t-.12,t+.12,prog*1.24-.12);
+        float k=m*(1.-m)*4.;
+        vec2 ua=cover(uv+vec2(k*.04*(nn-.5),k*.05),ia,fa.x,za);
+        vec2 ub=cover(uv-vec2(0.,(1.-m)*k*.05),ib,fa.y,zb);
+        float ab=rip*.006+k*.008;
+        vec3 c=mix(samp(ta,ua,ab),samp(tb,ub,ab),m);
+        c+=k*.08*vec3(1.,.3,.25);
+        gl_FragColor=vec4(c,1.);
+      }`;
+    const sh = (ty, src) => { const s = gl.createShader(ty); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; };
+    const pr = gl.createProgram();
+    try { gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); } catch (e) { return null; }
+    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return null;
+    gl.useProgram(pr);
+    const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    const U = {}; ['ta', 'tb', 'prog', 'time', 'vel', 'za', 'zb', 'res', 'mouse', 'ia', 'ib', 'fa'].forEach(k => U[k] = gl.getUniformLocation(pr, k));
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    const tex = HERO.map(k => {
+      const t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, IMG[k]);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      return t;
+    });
+    gl.uniform1i(U.ta, 0); gl.uniform1i(U.tb, 1);
+    return {
+      resize() { const dpr = Math.min(2, window.devicePixelRatio || 1); const w = Math.max(2, Math.round(canvas.clientWidth * dpr)), hh = Math.max(2, Math.round(canvas.clientHeight * dpr)); if (canvas.width !== w || canvas.height !== hh) { canvas.width = w; canvas.height = hh; } gl.viewport(0, 0, w, hh); gl.uniform2f(U.res, w, hh); },
+      draw() {
+        const A = IMG[HERO[S.a]], B = IMG[HERO[S.b]];
+        gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[S.a]);
+        gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[S.b]);
+        gl.uniform2f(U.ia, A.width, A.height); gl.uniform2f(U.ib, B.width, B.height);
+        gl.uniform2f(U.fa, WORKS[HERO[S.a]].fy, WORKS[HERO[S.b]].fy);
+        gl.uniform1f(U.prog, S.prog); gl.uniform1f(U.time, S.time); gl.uniform1f(U.vel, S.vel); gl.uniform1f(U.za, S.za); gl.uniform1f(U.zb, S.zb); gl.uniform2f(U.mouse, S.mx, S.my);
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+      }
+    };
+  }
+  function make2D() {
+    const g = canvas.getContext('2d');
+    return {
+      resize() { const dpr = Math.min(2, window.devicePixelRatio || 1); canvas.width = Math.round(canvas.clientWidth * dpr); canvas.height = Math.round(canvas.clientHeight * dpr); },
+      draw() {
+        const Wd = canvas.width, Ht = canvas.height;
+        const one = (k, z, a) => { const im = IMG[HERO[k]]; if (!im) return; const sc = Math.max(Wd / im.width, Ht / im.height) * z, sw = Wd / sc, sh = Ht / sc; g.globalAlpha = a; g.drawImage(im, (im.width - sw) / 2, Math.max(0, Math.min(im.height - sh, im.height * WORKS[HERO[k]].fy - sh / 2)), sw, sh, 0, 0, Wd, Ht); };
+        one(S.a, S.za, 1); if (S.prog > 0) one(S.b, S.zb, S.prog); g.globalAlpha = 1;
+      }
+    };
+  }
+  const capT = $('#capT'), capM = $('#capM'), capN = $('#capN'), glow = $('#glow'), dots = $('#dots');
+  dots.innerHTML = HERO.map((k, i) => `<button type="button" class="dot" data-k="${i}" aria-label="${WORKS[k].es[0]}"><i></i></button>`).join('');
+  function setCaption(i, anim) {
+    const t = WORKS[HERO[i]][lang];
+    const apply = () => { capT.textContent = t[0]; capM.textContent = t[1]; capN.textContent = String(i + 1).padStart(2, '0') + ' / ' + String(HERO.length).padStart(2, '0'); };
+    if (anim && hasG && !reduce) gsap.to(capT, { yPercent: -110, duration: .4, ease: 'power3.in', onComplete: () => { apply(); gsap.fromTo(capT, { yPercent: 110 }, { yPercent: 0, duration: .8, ease: 'expo.out' }); } });
+    else apply();
+    const gc = GLOWS[HERO[i]] || 'rgba(224,38,47,.5)';
+    if (hasG) gsap.to(glow, { '--gc': gc, duration: 1.6, ease: 'power2.inOut' }); else glow.style.setProperty('--gc', gc);
+    $$('.dot', dots).forEach((d, k) => { const f = d.querySelector('i'); if (hasG) { gsap.killTweensOf(f); gsap.set(f, { scaleX: k < i ? 1 : 0 }); if (k === i) gsap.to(f, { scaleX: 1, duration: reduce ? 0 : 6.5, ease: 'none' }); } else f.style.transform = 'scaleX(' + (k <= i ? 1 : 0) + ')'; });
+  }
+  function go(i) {
+    if (!R || busy || i === S.a) return;
+    busy = true; S.b = i; S.zb = 1; setCaption(i, true);
+    const done = () => { S.a = i; S.prog = 0; S.za = 1; busy = false; slideStart = performance.now(); };
+    if (hasG) gsap.to(S, { prog: 1, duration: reduce ? .5 : 1.7, ease: 'power2.inOut', onComplete: done }); else { S.prog = 1; done(); }
+  }
+  dots.addEventListener('click', (e) => { const d = e.target.closest('.dot'); if (d) go(+d.dataset.k); });
+  $('#frame').addEventListener('click', () => go((S.a + 1) % HERO.length));
+  $('#frame').addEventListener('pointermove', (e) => { const r = canvas.getBoundingClientRect(); tmx = (e.clientX - r.left) / r.width; tmy = 1 - (e.clientY - r.top) / r.height; });
+  function loop(now) {
+    if (R && heroVis && !document.hidden) {
+      S.time = now / 1000;
+      S.mx += (tmx - S.mx) * .08; S.my += (tmy - S.my) * .08;
+      const sp = Math.hypot(S.mx - pmx, S.my - pmy); pmx = S.mx; pmy = S.my;
+      S.vel += (Math.min(1, sp * 45) - S.vel) * .06;
+      const el = (now - slideStart) / 1000; S.za = 1 + Math.min(.08, el * .009);
+      R.draw();
+      if (!busy && el > 6.8 && !reduce) go((S.a + 1) % HERO.length);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  /* ---------------- Compare slider ---------------- */
+  const cmp = $('#cmp'), cmpR = $('#cmpR');
+  const setP = (p) => cmp.style.setProperty('--p', p + '%');
+  cmpR.addEventListener('input', () => setP(cmpR.value));
+  setP(50);
+
+  /* ---------------- Find Cristian ---------------- */
+  const stage = $('#stage'), stageImg = $('#stageImg'), thumbs = $('#thumbs'), fmsg = $('#fmsg'), scoreEl = $('#score');
+  const found = FIND.map(() => false);
+  let fi = 0, msgKey = 'fStart';
+  thumbs.innerHTML = FIND.map((f, i) => `<button type="button" class="th" data-k="${i}" aria-pressed="${i === 0}" aria-label="Obra ${i + 1}"><img src="${f.src}" alt=""><span class="ok" aria-hidden="true">✓</span></button>`).join('');
+  function updateScore() { const n = found.filter(Boolean).length; scoreEl.textContent = n + '/' + FIND.length; fmsg.textContent = T[lang][msgKey]; }
+  function clearMarks() { $$('.mark', stage).forEach(m => m.remove()); }
+  function okMark(f, anim) {
+    const w = stage.clientWidth, m = document.createElement('span'); m.className = 'mark ok';
+    const d = f.r * w * 1.6; m.style.width = d + 'px'; m.style.height = d + 'px'; m.style.left = (f.x * 100) + '%'; m.style.top = (f.y * 100) + '%';
+    stage.appendChild(m);
+    if (anim && hasG && !reduce) gsap.fromTo(m, { scale: 3, opacity: 0 }, { scale: 1, opacity: 1, duration: .9, ease: 'expo.out' });
+  }
+  function showPiece(i) {
+    fi = i; clearMarks();
+    $$('.th', thumbs).forEach((t, k) => t.setAttribute('aria-pressed', String(k === i)));
+    const swap = () => { stageImg.src = FIND[i].src; stageImg.onload = () => { if (found[i]) okMark(FIND[i], false); }; };
+    if (hasG && !reduce) gsap.to(stageImg, { opacity: 0, scale: .96, duration: .25, onComplete: () => { swap(); gsap.to(stageImg, { opacity: 1, scale: 1, duration: .6, ease: 'expo.out' }); } });
+    else swap();
+  }
+  thumbs.addEventListener('click', (e) => { const t = e.target.closest('.th'); if (t) showPiece(+t.dataset.k); });
+  stage.addEventListener('click', (e) => {
+    const r = stageImg.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    const f = FIND[fi];
+    if (found[fi]) { msgKey = 'fNext'; updateScore(); return; }
+    const dx = (x - f.x), dy = (y - f.y) * (r.height / r.width);
+    if (Math.hypot(dx, dy) < f.r) {
+      found[fi] = true; clearMarks(); okMark(f, true);
+      $$('.th', thumbs)[fi].classList.add('found');
+      msgKey = found.every(Boolean) ? 'fAll' : 'fYes'; updateScore();
+      if (hasG && !reduce) gsap.fromTo(scoreEl, { scale: 1.3, color: '#E0262F' }, { scale: 1, color: '#F3EDE6', duration: .8, ease: 'expo.out' });
+      const next = found.findIndex(v => !v);
+      if (next >= 0) setTimeout(() => showPiece(next), 1600);
+    } else {
+      const m = document.createElement('span'); m.className = 'mark no'; m.style.left = (x * 100) + '%'; m.style.top = (y * 100) + '%'; stage.appendChild(m);
+      msgKey = 'fNo'; updateScore();
+      if (hasG && !reduce) gsap.fromTo(m, { scale: .4, opacity: 1 }, { scale: 1.2, opacity: 0, duration: .9, ease: 'power2.out', onComplete: () => m.remove() }); else setTimeout(() => m.remove(), 800);
+    }
+  });
+  $('#hint').addEventListener('click', () => {
+    const f = FIND[fi], w = stage.clientWidth, m = document.createElement('span'); m.className = 'mark hint';
+    const d = w * .5; m.style.width = d + 'px'; m.style.height = d + 'px';
+    m.style.left = (Math.min(.75, Math.max(.25, f.x)) * 100) + '%'; m.style.top = (Math.min(.75, Math.max(.25, f.y)) * 100) + '%';
+    stage.appendChild(m);
+    if (hasG && !reduce) gsap.fromTo(m, { scale: .6, opacity: 0 }, { scale: 1, opacity: 1, duration: .6, yoyo: true, repeat: 3, repeatDelay: .2, onComplete: () => m.remove() }); else setTimeout(() => m.remove(), 2500);
+  });
+
+  /* ---------------- Lightbox ---------------- */
+  const lb = $('#lb'), lbImg = $('#lbImg');
+  let lbList = [], lbI = 0, lastFocus = null, lenis = null;
+  function lbShow(k) {
+    lbI = (k + lbList.length) % lbList.length; const w = WORKS[lbList[lbI]], t = w[lang];
+    lbImg.src = w.src; lbImg.alt = t[0] + ', ' + t[1];
+    $('#lbT').textContent = t[0]; $('#lbM').textContent = t[1] + ' · Cristian Zúñiga Toledo';
+    $('#lbN').textContent = String(lbI + 1).padStart(2, '0') + ' / ' + String(lbList.length).padStart(2, '0');
+    if (hasG && !reduce) gsap.fromTo(lbImg, { clipPath: 'inset(10% 10% 10% 10%)', scale: 1.05 }, { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, duration: 1, ease: 'expo.out' });
+  }
+  function lbOpen(i) { lbList = visibleIdx(); lastFocus = document.activeElement; lb.hidden = false; lbShow(Math.max(0, lbList.indexOf(i))); if (lenis) lenis.stop(); if (hasG && !reduce) gsap.fromTo(lb, { opacity: 0 }, { opacity: 1, duration: .35 }); $('#lbX').focus(); }
+  function lbClose() { const fin = () => { lb.hidden = true; if (lenis) lenis.start(); if (lastFocus) lastFocus.focus(); }; if (hasG && !reduce) gsap.to(lb, { opacity: 0, duration: .3, onComplete: fin }); else fin(); }
+  grid.addEventListener('click', (e) => { const it = e.target.closest('.item'); if (it) lbOpen(+it.dataset.i); });
+  $('#lbX').addEventListener('click', lbClose);
+  $('#lbP').addEventListener('click', () => lbShow(lbI - 1));
+  $('#lbNx').addEventListener('click', () => lbShow(lbI + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb || e.target.classList.contains('lb-stage')) lbClose(); });
+  lb.addEventListener('keydown', (e) => { if (e.key === 'Escape') lbClose(); if (e.key === 'ArrowRight') lbShow(lbI + 1); if (e.key === 'ArrowLeft') lbShow(lbI - 1); });
+
+  /* ---------------- Contact ---------------- */
+  $$('.chip').forEach(c => c.addEventListener('click', () => $$('.chip').forEach(o => o.setAttribute('aria-pressed', String(o === c)))));
+  $('#form').addEventListener('submit', (e) => { e.preventDefault(); $('#status').textContent = T[lang].sent; });
+
+  /* ---------------- Cursor + magnets ---------------- */
+  const curEl = $('#cur'), ring = $('#ring'), ringL = $('#ringL');
+  if (fine) {
+    document.documentElement.classList.add('has-cur'); curEl.hidden = false; ring.hidden = false;
+    let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
+    addEventListener('pointermove', (e) => { mx = e.clientX; my = e.clientY; curEl.style.transform = 'translate(' + mx + 'px,' + my + 'px)'; }, { passive: true });
+    document.addEventListener('pointerover', (e) => {
+      const lnk = e.target.closest('a, button:not(.item), .chip, input:not([type=range]), textarea');
+      const lab = !lnk && e.target.closest('[data-cursor]');
+      ring.classList.toggle('lab', !!lab); ring.classList.toggle('lnk', !!lnk);
+      if (lab) ringL.textContent = lab.dataset.cursor;
+    });
+    const rl = () => { rx += (mx - rx) * .2; ry += (my - ry) * .2; ring.style.transform = 'translate(' + rx + 'px,' + ry + 'px) translate(-50%,-50%)'; requestAnimationFrame(rl); };
+    requestAnimationFrame(rl);
+    if (hasG) $$('.magnet').forEach(el => {
+      el.addEventListener('pointermove', (e) => { const r = el.getBoundingClientRect(); gsap.to(el, { x: (e.clientX - r.left - r.width / 2) * .35, y: (e.clientY - r.top - r.height / 2) * .35, duration: .6, ease: 'power3.out' }); });
+      el.addEventListener('pointerleave', () => gsap.to(el, { x: 0, y: 0, duration: 1.1, ease: 'elastic.out(1,.32)' }));
+    });
+  }
+
+  /* ---------------- Scroll + motion ---------------- */
+  function scrollToEl(sel) { const el = sel === '#top' ? 0 : document.querySelector(sel); if (lenis) lenis.scrollTo(el, { duration: 1.6, easing: (t) => 1 - Math.pow(1 - t, 4) }); else if (el) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); else window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  $$('a[data-scroll]').forEach(a => a.addEventListener('click', (e) => { e.preventDefault(); scrollToEl(a.getAttribute('href')); }));
+  $('#toTop').addEventListener('click', () => scrollToEl('#top'));
+
+  function setupMotion() {
+    if (!hasG) return;
+    if (!reduce && window.Lenis) {
+      lenis = new Lenis({ lerp: .09, smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((t) => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
+    }
+    ScrollTrigger.create({ trigger: '#top', start: 'top top', end: 'bottom top', onToggle: (s) => { heroVis = s.isActive; } });
+    if (reduce) return;
+
+    gsap.to('#n1', { xPercent: -18, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true } });
+    gsap.to('#n2', { xPercent: 18, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true } });
+    gsap.to('#frame', { yPercent: 12, scale: .92, ease: 'none', scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true } });
+
+    $$('.rv').forEach(el => gsap.from(el.querySelectorAll('.ln-i'), { yPercent: 110, rotate: 2, duration: 1.2, stagger: .1, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 90%' } }));
+    wordReveal();
+
+    const sweep = { p: 92 };
+    gsap.to(sweep, { p: 50, duration: 1.8, ease: 'expo.inOut', scrollTrigger: { trigger: cmp, start: 'top 75%' }, onUpdate: () => { setP(sweep.p); cmpR.value = sweep.p; } });
+    gsap.from(cmp, { clipPath: 'inset(12% 8% 12% 8%)', duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: cmp, start: 'top 85%' } });
+
+    const m1 = gsap.to('#mq1', { xPercent: -50, duration: 24, ease: 'none', repeat: -1 });
+    const m2 = gsap.to('#mq2', { xPercent: -50, duration: 30, ease: 'none', repeat: -1 });
+    if (lenis) lenis.on('scroll', ({ velocity, direction }) => { const v = Math.min(4, 1 + Math.abs(velocity) * .08) * (direction < 0 ? -1 : 1); [m1, m2].forEach(m => gsap.to(m, { timeScale: v, duration: .3, overwrite: true })); });
+
+    const panels = $$('.panel');
+    panels.forEach((p, i) => {
+      gsap.fromTo(p.querySelector('img'), { scale: 1.2 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: p, start: 'top bottom', end: 'top top', scrub: true } });
+      gsap.from(p.querySelector('.word .dsp'), { yPercent: 60, opacity: 0, duration: 1.2, ease: 'expo.out', scrollTrigger: { trigger: p, start: 'top 40%' } });
+      const nx = panels[i + 1];
+      if (nx) gsap.to(p.querySelector('.in'), { scale: .9, filter: 'brightness(.45)', ease: 'none', scrollTrigger: { trigger: nx, start: 'top bottom', end: 'top top', scrub: true } });
+    });
+
+    ScrollTrigger.batch('.item', { start: 'top 92%', once: true, onEnter: (els) => gsap.from(els.map(e => e.querySelector('.ph')), { clipPath: 'inset(18% 12% 18% 12%)', duration: 1.3, stagger: .08, ease: 'expo.out' }) });
+
+    gsap.fromTo('#aboutImg', { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: '.about', start: 'top bottom', end: 'bottom top', scrub: true } });
+    gsap.from('.about .ph', { clipPath: 'inset(20% 12% 20% 12%)', duration: 1.5, ease: 'expo.out', scrollTrigger: { trigger: '.about', start: 'top 80%' } });
+    gsap.from('#stage', { clipPath: 'inset(15% 10% 15% 10%)', duration: 1.5, ease: 'expo.out', scrollTrigger: { trigger: '#stage', start: 'top 82%' } });
+    gsap.from('.th', { y: 30, opacity: 0, duration: .8, stagger: .08, ease: 'power3.out', scrollTrigger: { trigger: '#thumbs', start: 'top 92%' } });
+    gsap.from('.steps li', { y: 40, opacity: 0, duration: .9, stagger: .12, ease: 'power3.out', scrollTrigger: { trigger: '.steps', start: 'top 88%' } });
+  }
+
+  /* ---------------- Boot ---------------- */
+  const pre = $('#pre'), preCount = $('#preCount'), preBar = $('#preBar'), flash = $('#flash');
+  function splitChars(el) { const t = el.textContent; el.innerHTML = t.split('').map(c => c === ' ' ? '<span class="ch">&nbsp;</span>' : '<span class="ch">' + c + '</span>').join(''); }
+  function intro() {
+    if (!hasG || reduce) { pre.remove(); flash.remove(); return; }
+    const tl = gsap.timeline();
+    tl.to('#preCount, .pre-row', { yPercent: -60, opacity: 0, duration: .5, ease: 'power3.in', stagger: .05 })
+      .to(flash, { opacity: 1, duration: .07 })
+      .set(pre, { display: 'none' })
+      .to(flash, { opacity: 0, duration: 1.1, ease: 'power2.out' })
+      .from('#frame', { clipPath: 'inset(50% 50% 50% 50%)', duration: 1.6, ease: 'expo.inOut' }, '-=1.1')
+      .from('#n1 .ch', { yPercent: 115, duration: 1.2, stagger: .04, ease: 'expo.out' }, '-=1.2')
+      .from('#n2 .ch', { yPercent: 115, duration: 1.2, stagger: .03, ease: 'expo.out' }, '-=1.1')
+      .from('.hfade', { y: 24, opacity: 0, duration: .9, stagger: .1, ease: 'power3.out' }, '-=.9')
+      .from('.hd', { y: -24, opacity: 0, duration: .7, ease: 'power3.out' }, '-=.8')
+      .add(() => { pre.remove(); flash.remove(); slideStart = performance.now(); setCaption(S.a, false); });
+  }
+  async function boot() {
+    applyLang(lang, true); updateScore();
+    splitChars($('#n1')); splitChars($('#n2'));
+    const c = { v: 0 }; let loaded = 0;
+    const bump = () => { loaded++; const target = loaded / HERO.length * 100; if (hasG && !reduce) gsap.to(c, { v: target, duration: .4, onUpdate: () => { preCount.textContent = String(Math.round(c.v)).padStart(3, '0'); preBar.style.transform = 'scaleX(' + c.v / 100 + ')'; } }); };
+    await Promise.all(HERO.map(k => loadImg(WORKS[k].src).then(im => { IMG[k] = im; if (im) GLOWS[k] = avgColor(im); bump(); })));
+    if (HERO.every(k => IMG[k])) { try { R = makeGL(); } catch (e) { R = null; } if (!R) R = make2D(); R.resize(); }
+    setCaption(0, false);
+    requestAnimationFrame(loop);
+    setupMotion();
+    setTimeout(intro, hasG && !reduce ? 350 : 0);
+    if (hasG) { setTimeout(() => ScrollTrigger.refresh(), 700); addEventListener('load', () => ScrollTrigger.refresh()); }
+  }
+  let rT;
+  addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(() => { if (R) R.resize(); if (hasG) ScrollTrigger.refresh(); }, 200); });
+  const fontsReady = (document.fonts && document.fonts.ready) ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1500))]) : Promise.resolve();
+  fontsReady.then(boot);
+})();
+</script>
+
+</body>
+</html>
